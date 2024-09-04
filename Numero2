@@ -1,5 +1,3 @@
-2 -
-
 def fibonacci_sequence(n):
     fib_sequence = [0, 1]
     
