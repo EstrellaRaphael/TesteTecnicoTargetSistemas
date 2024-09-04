@@ -1,0 +1,21 @@
+def inverter_string(s):
+    # Convertemos a string em uma lista de caracteres
+    lista_characters = list(s)
+    
+    inicio = 0
+    fim = len(lista_characters) - 1
+    
+    while inicio < fim:
+        # Troca os caracteres
+        lista_characters[inicio], lista_characters[fim] = lista_characters[fim], lista_characters[inicio]
+        # Move os ponteiros
+        inicio += 1
+        fim -= 1
+    
+    return ''.join(lista_characters)
+
+entrada = input("Digite a string para inverter: ")  # Pode substituir com uma string definida, por exemplo: "Olá Mundo"
+
+string_invertida = inverter_string(entrada)
+
+print(f"String invertida: {string_invertida}")
